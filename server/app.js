@@ -82,5 +82,5 @@ app.get('/video/:id', function(req, res) {
 });
 
 app.listen(4000, function () {
-  console.log('Listening on porfgeyut 4000!')
+  console.log('Listening on port 4000!')
 });
