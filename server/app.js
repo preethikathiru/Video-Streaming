@@ -27,7 +27,6 @@ const videos = [
 
 app.use(cors());
 
-// endpoint to fetch all videos metadata
 app.get('/videos', function(req, res) {
   res.json(videos);
 });
@@ -43,7 +42,6 @@ app.get('/video/:id/poster', function(req, res) {
     .catch(err => console.log(err))
 });
 
-// endpoint to fetch a single video's metadata
 app.get('/video/:id/data', function(req, res) {
   const id = parseInt(req.params.id, 10);
   res.json(videos[id]);
@@ -84,5 +82,5 @@ app.get('/video/:id', function(req, res) {
 });
 
 app.listen(4000, function () {
-  console.log('Listening on port 4000!')
+  console.log('Listening on porfgeyut 4000!')
 });
